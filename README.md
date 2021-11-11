@@ -21,6 +21,9 @@ Map<Dish.Type, Map<CaloricLevel, List<Dish>>> multiLevel = Menu.menu.stream()
     .collect(groupingBy(Dish::getType,
     groupingBy(caloricLevelFunction)));
 ```
+See more examples of groupingBy in next [URL](https://github.com/jonathanperezdev/Modern-Java-in-Action/blob/main/src/main/java/org/modern/java/inaction/chapter6/groupingBy/GroupingByExamples.java)
+
 The resulting structure can be represented as a tree as is shown in next image, but, you can think in this structure as a table, left side of the image
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+![groupingBy - Multilevel](https://github.com/jonathanperezdev/Modern-Java-in-Action/blob/main/img/groupingBy_Multilevel_map.JPG?raw=true "groupingBy - Multilevel")
 
